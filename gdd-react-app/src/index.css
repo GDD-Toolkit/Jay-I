@@ -1,13 +1,83 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.App {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  margin-top: 50px;
+  overflow-x: hidden;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  margin-top: 2.75rem;
+  width: 100%;
+}
+
+.input-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin-bottom: 5rem;
+}
+
+.input-field {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  color: black;
+  padding: 0.625rem 0;
+  width: 100%;
+  font-size: 24px;
+}
+
+/* Styling for the select dropdown */
+.input-field select {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  color: black;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  width: 100%;
+  font-size: 24px;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.input-field:focus {
+  outline: none;
+}
+
+.submit-btn {
+  display: inline-block;
+  padding: 2rem 5rem;
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #000;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
 }

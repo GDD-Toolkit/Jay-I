@@ -4,6 +4,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
+    {/* form */}
       <form className="form">
         {/* First Name */}
         <div className="input-div">

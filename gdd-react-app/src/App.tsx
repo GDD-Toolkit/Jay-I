@@ -8,7 +8,9 @@ function App() {
   const [affiliation, setAffiliation] = useState("");
 
   const handleChanges = (event) => {
+    /* Prevent the form from being refreshed to empty */
     event.preventDefault();
+    
     console.log(firstName);
     console.log(lastName);
     console.log(role);

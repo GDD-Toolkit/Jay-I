@@ -15,6 +15,8 @@ function App() {
     console.log(affiliation);
   };
 
+  /*test */
+
   return (
     <div className="App">
       <form className="form">

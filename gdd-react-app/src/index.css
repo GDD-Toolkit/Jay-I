@@ -81,3 +81,7 @@ code {
   text-align: center;
   text-decoration: none;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

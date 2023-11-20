@@ -1,0 +1,1 @@
+/* getter and setters for the docs and collections */

@@ -11,19 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        with:
-          persis-credentials: false
-      - name: Install npm dependencies
-        working-directory: ./src
-        run: yarn run build
-      - name: yarn init
-        run: yarn init -y
-      - name: deploy it
-        working-directory: ./src
-        run: CI=false && yarn run build 
+      - run: npm ci && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          entryPoint: ./src
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_GDD_TOOLKIT }}'
           channelId: live

@@ -8,20 +8,10 @@ jobs:
     if: '${{ github.event.pull_request.head.repo.full_name == github.repository }}'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3  
-        with:
-          persist-credentials: false
-      - name: Install yarn dependencies
-        working-directory: ./src
-        run: yarn install
-      - name: yarn init
-        run: yarn init -y
-      - name: deploy it
-        working-directory: ./src
-        run: CI=false && yarn run build
+      - uses: actions/checkout@v3
+      - run: npm ci && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          entryPoint: ./react-app
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_GDD_TOOLKIT }}'
           projectId: gdd-toolkit

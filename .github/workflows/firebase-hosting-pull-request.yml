@@ -11,14 +11,14 @@ jobs:
       - uses: actions/checkout@v3  
         with:
           persist-credentials: false
-      - name: Install npm dependencies
+      - name: Install yarn dependencies
         working-directory: ./src
-        run: npm install
-      - name: npm init
-        run: npm init -y
+        run: yarn install
+      - name: yarn init
+        run: yarn init -y
       - name: deploy it
         working-directory: ./src
-        run: CI=false && npm run build
+        run: CI=false && yarn run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           entryPoint: ./react-app

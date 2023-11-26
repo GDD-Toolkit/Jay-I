@@ -13,7 +13,8 @@ Jay-I will be seamlessly integrated into the [Development Ethics Toolkit website
 
 **Back-End:** TypeScript, Firebase (Authentication, Database, Hosting)
 
-
+## Run Deployed Application
+Access [Jay-I](https://gdd-toolkit.web.app/)
 ## Run Locally
 
 Clone the project

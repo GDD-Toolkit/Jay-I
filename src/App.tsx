@@ -1,6 +1,6 @@
 import './App.css';
 import React, { useState } from "react";
-/* test */
+
 function App() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");

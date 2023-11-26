@@ -1,4 +1,4 @@
-import './App.css';
+import styles from './index.module.css'
 import React, { useState } from "react";
 
 function App() {
@@ -19,12 +19,12 @@ function App() {
 
   return (
     <div className="App">
-      <form className="form">
+      <form className={styles.form}>
         {/* First Name */}
-        <div className="input-div">
+        <div className={styles.inputDiv}>
           <input
             onChange={e => setFirstName(e.target.value)}
-            className="input-field"
+            className={styles.inputField}
             type="text"
             name="First Name"
             id="firstName"
@@ -33,10 +33,10 @@ function App() {
         </div>
 
         {/* Last Name */}
-        <div className="input-div">
+        <div className={styles.inputDiv}>
           <input
             onChange={e => setLastName(e.target.value)}
-            className="input-field"
+            className={styles.inputField}
             type="text"
             name="Last Name"
             id="lastName"
@@ -45,9 +45,9 @@ function App() {
         </div>
 
         {/* User Role Dropdown */}
-        <div className="input-div">
+        <div className={styles.inputDiv}>
         <select
-            className="input-field"
+            className={styles.inputField}
             name="User Role"
             id="userRole"
             value={role}
@@ -63,10 +63,10 @@ function App() {
         </div>
 
         {/* Affiliation */}
-        <div className="input-div">
+        <div className={styles.inputDiv}>
           <input
             onChange={e => setAffiliation(e.target.value)}
-            className="input-field"
+            className={styles.inputField}
             type="text"
             name="Affiliation"
             id="affiliation"
@@ -75,7 +75,7 @@ function App() {
         </div>
 
         {/* Submit Button */}
-        <button className="submit-btn" type="submit" onClick={handleChanges}>
+        <button className={styles.submitBtn} type="submit" onClick={handleChanges}>
           Submit
         </button>
       </form>

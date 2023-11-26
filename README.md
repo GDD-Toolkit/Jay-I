@@ -1,6 +1,3 @@
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
-
-
 # Project Title
 
 **Jay-I** is a unique project that blends the philosophical insights of Jay Drydyk with the power of Artificial Intelligence (AI). The primary goal of Jay-I is to serve as a tool for integrating development ethics into stakeholder project proposals and plans. Development ethics focuses on assessing the societal impact of projects and ensuring that development efforts contribute to meaningful and positive outcomes.

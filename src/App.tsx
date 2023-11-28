@@ -1,4 +1,4 @@
-import styles from './index.module.css'
+import styles from "./index.module.css";
 import React, { useState } from "react";
 
 function App() {
@@ -19,6 +19,7 @@ function App() {
 
   return (
     <div className="App">
+      {/* <NavBar title="This is where the NavBar should go" /> */}
       <form className={styles.form}>
         {/* First Name */}
         <div className={styles.inputDiv}>

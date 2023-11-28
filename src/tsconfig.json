@@ -8,12 +8,14 @@
     "strict": true,
     "target": "es2017",
     "baseUrl": "./src",
+    "allowJs": true,
     "paths": {
       "*": ["types/*"]
     },
   },
   "compileOnSave": true,
   "include": [
-    "src"
-  ]
+    "src", "global.d.ts"
+  ],
+  "exclude":[]
 }

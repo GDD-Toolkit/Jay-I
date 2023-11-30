@@ -49,7 +49,7 @@ Start the server
 - Tobiloba Adegbaju - [@ade-olu](https://github.com/ade-olu)
 - Sophia Gonzales - [@sophiag0n](https://github.com/sophiag0n)
 - Ojie Okodogbe
-- Khardiatou Wane
+- Khadija Wane
 - Krisha Mahadevia
 ## Acknowledgements
 

@@ -2,6 +2,7 @@ import styles from "./index.module.css";
 import React, { useState } from "react";
 import {theme} from './mui.ts';
 import { ThemeProvider } from "@mui/material";
+import InstructionsBox from './components/Instructions/InstructionsBox.tsx';
 
 function App() {
   const [firstName, setFirstName] = useState("");
@@ -21,8 +22,10 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <div className="App">
+    
+        <InstructionsBox></InstructionsBox>
         {/* <NavBar title="This is where the NavBar should go" /> */}
+        <div className={styles.App}>
         <form className={styles.form}>
           {/* First Name */}
           <div className={styles.inputDiv}>

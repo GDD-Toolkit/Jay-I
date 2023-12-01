@@ -1,20 +1,10 @@
 :root {
-  --color-light-green: #9DBF9E;
-  --color-grey: #e3e3e3;
-  --color-dark-green: #577167;
-  --color-yellow-green: #E8F2C1;
-  --color-white: #ffffff;
-}
-
-/* Uncomment after incorporating color scheme
-:root {
-  --color-black: #111A31;
+  --color-dark-blue: #111A31;
   --color-white: #F1F1F1;
   --color-blue: #B9DDE7;
   --color-orange: #F7D19F;
   --color-green: #5B9723;
 }
-*/
 
 body {
   margin: 0;
@@ -36,7 +26,6 @@ code {
   max-width: 100%;
   text-align: center;
   font-family: "Arial", sans-serif;
-  margin-top: 50px;
   overflow-x: hidden;
 }
 
@@ -92,7 +81,7 @@ code {
   font-size: 24px;
   font-weight: 600;
   color: var(--color-white);
-  background-color: var(--color-dark-green);
+  background-color: var(--color-dark-blue);
   border: none;
   border-radius: 999px;
   cursor: pointer;

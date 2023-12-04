@@ -1,8 +1,5 @@
-/*
-This is an example of what the NavBar code should look like. When importing the NavBar to any page, one would have to include the
-the title property so that it can be displayed in a way demonstrated below:
-
 import React from "react";
+import styles from "./NavBar.module.css";
 
 interface props {
     title: String;
@@ -10,9 +7,10 @@ interface props {
 
 const NavBar = ({title}: props): React.ReactElement => {
     return (
-        <div>{title}</div>
+        <div className={styles.navBar}>
+            <h1 className={styles.title}>{title}</h1>
+        </div>
     );
 }
 
 export default NavBar;
-*/

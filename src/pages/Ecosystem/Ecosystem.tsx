@@ -1,31 +1,27 @@
 import { ThemeProvider } from '@emotion/react';
 import { Box, Grid } from '@mui/material';
 import React, { useState } from 'react';
+import InputBox from '../../components/InputBox/InputBox.tsx';
 import InstructionsBox from '../../components/Instructions/InstructionsBox.tsx';
 import NavBar from '../../components/NavBar/NavBar.tsx';
 import CustomStepper from '../../components/Stepper/CustomStepper.tsx';
 import { theme } from '../../mui.ts';
-import styles from './Proposal.module.css';
-import Default from '../Default/Default.tsx';
+import styles from './Ecosystem.module.css';
 
-interface ProposalProps {
+interface EcosystemProps {
+    onNext: () => void;
     onBack: () => void;
-    onHome: () => void;
   }
 
-const Proposal: React.FC<ProposalProps> = ({ onBack, onHome }) => {
+const Ecosystem: React.FC<EcosystemProps> = ({ onNext, onBack }) => {
     const [currentPage, setCurrentPage] = useState(1);
   
     const handleNext = () => {
       setCurrentPage((prevPage) => prevPage + 1);
     };
 
-    const handleBack = () => {
+    const handleBack= () => {
         setCurrentPage((prevPage) => prevPage - 1);
-    }
-
-    const handleHome = () => {
-        setCurrentPage(1);
     }
 
     const handleChanges = (event: any) => {
@@ -41,7 +37,8 @@ const Proposal: React.FC<ProposalProps> = ({ onBack, onHome }) => {
     return (
 
         <ThemeProvider theme={theme}>
-            <NavBar title="Proposal" />
+            <NavBar title="Ecosystem" />
+            <InstructionsBox></InstructionsBox>
 
             <Box sx={{
           width: '94%',
@@ -49,15 +46,26 @@ const Proposal: React.FC<ProposalProps> = ({ onBack, onHome }) => {
         }}>
           <Grid container rowSpacing={5}>
                     <Grid item xs={12}>
-                       <p>Sorry, the proposal cannot be generated at this time!</p>
+                        <InputBox
+                            placeholder={"What and who is involved?"}
+                            header={"Ecosystem"} 
+                            setWidth={1375}
+                            onChange={event => null}
+                            setHeight={500}
+                            title={"Ecosystem"}
+                            modalChildren={
+                                <p>What and who is involved?</p>
+                            }
+                        />
                     </Grid>
                 </Grid>
                 <div className={styles.buttonsContainer}>
                     <button className={styles.backBtn} type="submit" onClick={onBack}>
                         Back
                     </button>
-                    <button className={styles.backBtn} type="submit" onClick={onHome}>
-                        Home
+
+                    <button className={styles.nextBtn} type="submit" onClick={onNext}>
+                        Next
                     </button>
                 </div>
             </Box>
@@ -71,4 +79,4 @@ const Proposal: React.FC<ProposalProps> = ({ onBack, onHome }) => {
     )
 };
 
-export default Proposal;
+export default Ecosystem;

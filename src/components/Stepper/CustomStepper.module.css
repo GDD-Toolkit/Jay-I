@@ -1,0 +1,9 @@
+.breadcrumb {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .singleBreadcrumb {
+    width: 500px;
+  }

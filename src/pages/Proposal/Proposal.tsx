@@ -1,12 +1,11 @@
 import { ThemeProvider } from '@emotion/react';
 import { Box, Grid } from '@mui/material';
 import React, { useState } from 'react';
-import InstructionsBox from '../../components/Instructions/InstructionsBox.tsx';
 import NavBar from '../../components/NavBar/NavBar.tsx';
-import CustomStepper from '../../components/Stepper/CustomStepper.tsx';
+// import CustomStepper from '../../components/Stepper/CustomStepper.tsx';
 import { theme } from '../../mui.ts';
 import styles from './Proposal.module.css';
-import Default from '../Default/Default.tsx';
+
 
 interface ProposalProps {
     onBack: () => void;

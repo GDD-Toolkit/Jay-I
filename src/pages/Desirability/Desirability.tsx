@@ -6,7 +6,7 @@ import { theme } from '../../mui.ts';
 import { Box, Grid } from '@mui/material';
 import InputBox from '../../components/InputBox/InputBox.tsx';
 import styles from './Desirability.module.css';
-import CustomStepper from '../../components/Stepper/CustomStepper.tsx';
+// import CustomStepper from '../../components/Stepper/CustomStepper.tsx';
 
 interface DesirabilityProps {
     onNext: () => void;

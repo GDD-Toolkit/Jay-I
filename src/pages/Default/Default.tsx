@@ -6,7 +6,7 @@ import InstructionsBox from "../../components/Instructions/InstructionsBox.tsx";
 import ModalDialog from "../../components/ModalDialog/ModalDialog.tsx";
 import NavBar from "../../components/NavBar/NavBar.tsx";
 import SelectDropdown from "../../components/SelectDropdown/SelectDropdown.tsx";
-import CustomStepper from "../../components/Stepper/CustomStepper.tsx";
+// import CustomStepper from "../../components/Stepper/CustomStepper.tsx";
 import { theme } from '../../mui.ts';
 import styles from './Default.module.css';
 import Ethicality from "../Ethicality/Ethicality.tsx";

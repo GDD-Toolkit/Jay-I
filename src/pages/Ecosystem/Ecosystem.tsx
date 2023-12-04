@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import InputBox from '../../components/InputBox/InputBox.tsx';
 import InstructionsBox from '../../components/Instructions/InstructionsBox.tsx';
 import NavBar from '../../components/NavBar/NavBar.tsx';
-import CustomStepper from '../../components/Stepper/CustomStepper.tsx';
+// import CustomStepper from '../../components/Stepper/CustomStepper.tsx';
 import { theme } from '../../mui.ts';
 import styles from './Ecosystem.module.css';
 

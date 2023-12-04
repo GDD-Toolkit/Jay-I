@@ -9,47 +9,47 @@
 }
 
 .nextBtn {
-    padding: .5rem 3rem;
-    font-size: large;
-    font-weight: bolder;
-    color: var(--color-white);
-    background-color: var(--color-dark-blue);
-    border: none;
-    border-radius: 999px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    bottom: 0;
-  }
+  padding: .5rem 3rem;
+  font-size: large;
+  font-weight: bolder;
+  color: var(--color-white);
+  background-color: var(--color-dark-blue);
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  bottom: 0;
+}
 
-  .backBtn {
-    padding: .5rem 3rem;
-    font-size: large;
-    font-weight: bolder;
-    color: var(--color-white);
-    background-color: var(--color-dark-blue);
-    border: none;
-    border-radius: 999px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    bottom: 0;
-  }
-    
-    .modalTitle {
-      font-family: "Arial", sans-serif;
-      margin-top: 0px;
-      margin-bottom: 0px;
-    }
-    
-    .inputBox {
-      width: 300px;
-      border-style: solid;
-      border-color: black;
-      border-top: 0cm;
-    }
-  
-    .stepper {
-      width: 100%;
-      margin-top: 30px;
-    }
+.backBtn {
+  padding: .5rem 3rem;
+  font-size: large;
+  font-weight: bolder;
+  color: var(--color-white);
+  background-color: var(--color-dark-blue);
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  bottom: 0;
+}
+
+.modalTitle {
+  font-family: "Arial", sans-serif;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.inputBox {
+  width: 300px;
+  border-style: solid;
+  border-color: black;
+  border-top: 0cm;
+}
+
+.stepper {
+  width: 100%;
+  margin-top: 30px;
+}

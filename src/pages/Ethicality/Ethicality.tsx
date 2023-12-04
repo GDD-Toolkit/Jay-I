@@ -49,15 +49,17 @@ const Ethicality: React.FC<EthicalityProps> = ({ onNext, onBack }) => {
             <InstructionsBox></InstructionsBox>
 
             <Box sx={{
-          width: '94%',
-          marginLeft: "4.2%",
+          width: '97%',
+          marginLeft: 'auto',
+          marginRight: 'auto',
+          
         }}>
           <Grid container rowSpacing={5}>
                     <Grid item xs={6}>
                         <InputBox
                             placeholder={"What issue is at stake?"}
                             header={"1. Frame the Problem"} 
-                            setWidth={660}
+                            setWidth={0}
                             onChange={event => null}
                             setHeight={300}
                             title={"Frame the Problem"}
@@ -121,7 +123,7 @@ const Ethicality: React.FC<EthicalityProps> = ({ onNext, onBack }) => {
                         <InputBox
                             placeholder={"What and who is implicated by the project?"}
                             header={"1a. Ethical Deliberation"} 
-                            setWidth={660}
+                            setWidth={0}
                             onChange={event => null}
                             setHeight={300}
                             title={"Ethical Deliberation"}
@@ -153,7 +155,7 @@ const Ethicality: React.FC<EthicalityProps> = ({ onNext, onBack }) => {
                         <InputBox
                             placeholder={"How will it change things? What goal will it accomplish?"}
                             header={"1b. Societal Impact"} 
-                            setWidth={660}
+                            setWidth={0}
                             onChange={event => null}
                             setHeight={300}
                             title={"Societal Impact"}
@@ -200,7 +202,7 @@ const Ethicality: React.FC<EthicalityProps> = ({ onNext, onBack }) => {
                         <InputBox
                             placeholder={"What and who is implicated by the project?"}
                             header={"1c. Key Impact Indicators"} 
-                            setWidth={660}
+                            setWidth={0}
                             onChange={event => null}
                             setHeight={300}
                             title={"Key Impact Indicators"}
@@ -240,7 +242,8 @@ const Ethicality: React.FC<EthicalityProps> = ({ onNext, onBack }) => {
                         />
                     </Grid>
                 </Grid>
-                <div className={styles.buttonsContainer}>
+            </Box>
+            <div className={styles.buttonsContainer}>
                     <button className={styles.backBtn} type="submit" onClick={onBack}>
                         Back
                     </button>
@@ -249,7 +252,6 @@ const Ethicality: React.FC<EthicalityProps> = ({ onNext, onBack }) => {
                         Next
                     </button>
                 </div>
-            </Box>
 
             {/* <div className={styles.stepper}>
                 <CustomStepper currPage={currentPage} onNext={handleNext} />

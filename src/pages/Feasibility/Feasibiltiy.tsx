@@ -49,15 +49,16 @@ const Feasibility: React.FC<FeasibilityProps> = ({ onNext, onBack }) => {
             <InstructionsBox></InstructionsBox>
 
             <Box sx={{
-          width: '94%',
-          marginLeft: "4.2%",
+  width: '97%',
+  marginLeft: 'auto',
+  marginRight: 'auto', 
         }}>
           <Grid container rowSpacing={5}>
                     <Grid item xs={6}>
                         <InputBox
                             placeholder={"What specific need or problem can be addressed?"}
                             header={"3. Key Activities"} 
-                            setWidth={660}
+                            setWidth={0}
                             onChange={event => null}
                             setHeight={300}
                             title={"Key Activities"}
@@ -89,7 +90,7 @@ const Feasibility: React.FC<FeasibilityProps> = ({ onNext, onBack }) => {
                         <InputBox
                             placeholder={"Who should we work with to address these problems?"}
                             header={"3a. Key Partners"} 
-                            setWidth={660}
+                            setWidth={0}
                             onChange={event => null}
                             setHeight={300}
                             title={"Key Partners"}
@@ -114,11 +115,19 @@ const Feasibility: React.FC<FeasibilityProps> = ({ onNext, onBack }) => {
                             }
                         />
                     </Grid>
+                </Grid>
+            </Box>
+            <Box   sx = {{width: '100%',
+  marginLeft: 'auto',
+  marginRight: 'auto', 
+  marginTop: '25px'}}>
+                <Grid rowSpacing={5}>
+                    <Grid item xs={12}>
                     <Grid item xs={12}>
                         <InputBox
                             placeholder={"How do we communicate to potential partners?"}
                             header={"3b. Channels"} 
-                            setWidth={1375}
+                            setWidth={0}
                             onChange={event => null}
                             setHeight={300}
                             title={"Channels"}
@@ -141,6 +150,7 @@ const Feasibility: React.FC<FeasibilityProps> = ({ onNext, onBack }) => {
                                 </ol>
                             }
                         />
+                    </Grid>
                     </Grid>
                 </Grid>
                 <div className={styles.buttonsContainer}>

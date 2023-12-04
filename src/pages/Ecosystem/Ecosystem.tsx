@@ -41,15 +41,16 @@ const Ecosystem: React.FC<EcosystemProps> = ({ onNext, onBack }) => {
             <InstructionsBox></InstructionsBox>
 
             <Box sx={{
-          width: '94%',
-          marginLeft: "4.2%",
+  width: '100%',
+  marginLeft: 'auto',
+  marginRight: 'auto',     
         }}>
           <Grid container rowSpacing={5}>
                     <Grid item xs={12}>
                         <InputBox
                             placeholder={"What and who is involved?"}
                             header={"Ecosystem"} 
-                            setWidth={1375}
+                            setWidth={0}
                             onChange={event => null}
                             setHeight={500}
                             title={"Ecosystem"}

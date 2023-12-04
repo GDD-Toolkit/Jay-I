@@ -41,15 +41,15 @@ const Abstract: React.FC<AbstractProps> = ({ onNext, onBack }) => {
             <InstructionsBox></InstructionsBox>
 
             <Box sx={{
-          width: '94%',
-          marginLeft: "4.2%",
+          width: '100%',
+          marginLeft: "auto",
         }}>
           <Grid container rowSpacing={5}>
                     <Grid item xs={12}>
                         <InputBox
                             placeholder={""}
                             header={"Project Title"} 
-                            setWidth={1375}
+                            setWidth={0}
                             onChange={event => null}
                             setHeight={0}
                             title={"Project Title"}
@@ -60,7 +60,7 @@ const Abstract: React.FC<AbstractProps> = ({ onNext, onBack }) => {
                         <InputBox
                             placeholder={""}
                             header={"Abstract"} 
-                            setWidth={1375}
+                            setWidth={0}
                             onChange={event => null}
                             setHeight={500}
                             title={"Abstract"}

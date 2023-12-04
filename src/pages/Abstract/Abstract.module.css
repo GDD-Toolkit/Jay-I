@@ -1,9 +1,11 @@
 .buttonsContainer {
-  width: 97.5%;
+  width: 94%;
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .nextBtn {
@@ -17,7 +19,6 @@
     cursor: pointer;
     text-align: center;
     text-decoration: none;
-    right: 5%;
     bottom: 0;
   }
 
@@ -32,7 +33,6 @@
     cursor: pointer;
     text-align: center;
     text-decoration: none;
-    left: 5%;
     bottom: 0;
   }
   

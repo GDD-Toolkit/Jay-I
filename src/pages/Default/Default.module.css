@@ -1,11 +1,16 @@
 
   .btnContainer {
-    width: 100%;
+    width: 55.5%;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 3%;
+
   }
   
   .btn {
-    display: inline-block;
     padding: 1.5rem 3rem;
     font-size: large;
     font-weight: bolder;
@@ -29,9 +34,6 @@
     cursor: pointer;
     text-align: center;
     text-decoration: none;
-    position: absolute;
-    right: 5%;
-    bottom: 3%;
   }
   
   .modalTitle {

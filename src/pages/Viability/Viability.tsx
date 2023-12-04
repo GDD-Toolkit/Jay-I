@@ -49,15 +49,16 @@ const Viability: React.FC<ViabilityProps> = ({ onNext, onBack }) => {
             <InstructionsBox></InstructionsBox>
 
             <Box sx={{
-          width: '94%',
-          marginLeft: "4.2%",
+  width: '97%',
+  marginLeft: 'auto',
+  marginRight: 'auto', 
         }}>
           <Grid container rowSpacing={5}>
                     <Grid item xs={6}>
                         <InputBox
                             placeholder={"What resources do we have and need?"}
                             header={"4. Key Resources"} 
-                            setWidth={660}
+                            setWidth={0}
                             onChange={event => null}
                             setHeight={300}
                             title={"Key Resources"}
@@ -86,7 +87,7 @@ const Viability: React.FC<ViabilityProps> = ({ onNext, onBack }) => {
                         <InputBox
                             placeholder={"How do we generate income?"}
                             header={"4a. Revenue Streams"} 
-                            setWidth={660}
+                            setWidth={0}
                             onChange={event => null}
                             setHeight={300}
                             title={"Revenue Streams"}
@@ -113,7 +114,7 @@ const Viability: React.FC<ViabilityProps> = ({ onNext, onBack }) => {
                         <InputBox
                             placeholder={"What are the costs?"}
                             header={"4b.1 Cost Structure"} 
-                            setWidth={660}
+                            setWidth={0}
                             onChange={event => null}
                             setHeight={300}
                             title={"Cost Structure"}
@@ -140,7 +141,7 @@ const Viability: React.FC<ViabilityProps> = ({ onNext, onBack }) => {
                         <InputBox
                             placeholder={"How do we cover them?"}
                             header={"4b.2 Cost Structure"} 
-                            setWidth={660}
+                            setWidth={0}
                             onChange={event => null}
                             setHeight={300}
                             title={"Cost Structure"}
@@ -165,7 +166,8 @@ const Viability: React.FC<ViabilityProps> = ({ onNext, onBack }) => {
                         />
                     </Grid>
                 </Grid>
-                <div className={styles.buttonsContainer}>
+            </Box>
+            <div className={styles.buttonsContainer}>
                     <button className={styles.backBtn} type="submit" onClick={onBack}>
                         Back
                     </button>
@@ -174,7 +176,6 @@ const Viability: React.FC<ViabilityProps> = ({ onNext, onBack }) => {
                         Next
                     </button>
                 </div>
-            </Box>
 
             {/* <div className={styles.stepper}>
                 <CustomStepper currPage={currentPage} onNext={handleNext} />

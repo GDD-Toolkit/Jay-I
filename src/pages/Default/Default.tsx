@@ -44,15 +44,16 @@ interface DefaultProps {
         <NavBar title="General Information" />
         <InstructionsBox></InstructionsBox>
         <Box sx={{
-          width: '94%',
-          marginLeft: "4.2%",
+  width: '97%',
+  marginLeft: 'auto',
+  marginRight: 'auto',
         }}>
           <Grid container rowSpacing={5}>
             <Grid item xs={6}>
               <InputBox
                 placeholder={"Please enter your first name."}
                 header={"First Name"} 
-                setWidth={660}
+                setWidth={0}
                 onChange={event => setFirstName(event.target.value)}
                 setHeight={0} 
                 title={"First Name"} 
@@ -63,7 +64,7 @@ interface DefaultProps {
               <InputBox
                 placeholder={"Please enter your last name."}
                 header={"Last Name"} 
-                setWidth={660}  
+                setWidth={0}  
                 onChange={e => setLastName(e.target.value)}
                 setHeight={0}
                 title={"Last Name"} 
@@ -74,7 +75,7 @@ interface DefaultProps {
               <InputBox
                 placeholder={"Please enter your role."}
                 header={"Role"} 
-                setWidth={660}
+                setWidth={0}
                 onChange={e => setRole(e.target.value)} 
                 setHeight={0}    
                 title={"Role"} 
@@ -91,6 +92,26 @@ interface DefaultProps {
               />
             </Grid>
             <Grid item xs={6}>
+              <InputBox
+                placeholder={"Please enter your affiliation."}
+                header={"Affiliation"} 
+                setWidth={0}
+                onChange={e => setRole(e.target.value)} 
+                setHeight={0}    
+                title={"Affiliation"} 
+                modalChildren={
+                    <div>
+                        <div>
+                            <p>Please enter the affiliation you are using this tool for. This is used to make your proposal more customized and helps us know who our users are.</p>
+                        </div>
+                        <div>
+                            <p>Example: Monster University.</p>
+                        </div>
+                    </div>
+                }   
+              />
+            </Grid>
+            <Grid item xs={12}>
               <SelectDropdown 
                 header="Region" 
                 title={"Region"} 
@@ -107,11 +128,10 @@ interface DefaultProps {
           <button className={styles.btn} type="submit" onClick={handleChanges}>
               Auto-Fill with Log-in
           </button>
+          <button className={styles.nextBtn} type="submit" onClick={() => onNext(currentPage)}>
+            Next
+          </button>
         </div>
-
-      <button className={styles.nextBtn} type="submit" onClick={() => onNext(currentPage)}>
-        Next
-      </button>
 
         </ThemeProvider>
     )

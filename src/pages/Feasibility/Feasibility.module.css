@@ -1,40 +1,40 @@
 .buttonsContainer {
-    width: 97.5%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-    margin-bottom: 30px;
+  width: 94%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nextBtn {
+    padding: .5rem 3rem;
+    font-size: large;
+    font-weight: bolder;
+    color: var(--color-white);
+    background-color: var(--color-dark-blue);
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    bottom: 0;
   }
-  
-  .nextBtn {
-      padding: .5rem 3rem;
-      font-size: large;
-      font-weight: bolder;
-      color: var(--color-white);
-      background-color: var(--color-dark-blue);
-      border: none;
-      border-radius: 999px;
-      cursor: pointer;
-      text-align: center;
-      text-decoration: none;
-      right: 5%;
-      bottom: 0;
-    }
-  
-    .backBtn {
-      padding: .5rem 3rem;
-      font-size: large;
-      font-weight: bolder;
-      color: var(--color-white);
-      background-color: var(--color-dark-blue);
-      border: none;
-      border-radius: 999px;
-      cursor: pointer;
-      text-align: center;
-      text-decoration: none;
-      left: 5%;
-      bottom: 0;
-    }
+
+  .backBtn {
+    padding: .5rem 3rem;
+    font-size: large;
+    font-weight: bolder;
+    color: var(--color-white);
+    background-color: var(--color-dark-blue);
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    bottom: 0;
+  }
     
     .modalTitle {
       font-family: "Arial", sans-serif;

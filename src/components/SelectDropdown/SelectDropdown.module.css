@@ -5,11 +5,11 @@
     border-radius: 5px;
     text-align: left;
     padding-left: 15px;
+    padding-right: 0px;
     padding-bottom: 15px;
-    margin-left: 26px;
-    width: 660px;
-    max-width: 95.8%;
-    margin-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 97%;
   }
   
   .headerBox {

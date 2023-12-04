@@ -33,8 +33,10 @@ const InputBox = ({placeholder, header, setWidth, setHeight, title, modalChildre
     justifyContent: "left",
     paddingLeft: "15px",
     paddingBottom: "20px",
-    width: setWidth || "100%",
+    width: setWidth || "94%",
     height: setHeight || undefined,
+    marginRight: "auto",
+    marginLeft: 'auto',
   }
   
     return (

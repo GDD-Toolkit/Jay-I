@@ -49,15 +49,16 @@ const Desirability: React.FC<DesirabilityProps> = ({ onNext, onBack }) => {
             <InstructionsBox></InstructionsBox>
 
             <Box sx={{
-                width: '94%',
-                marginLeft: "4.2%",
+               width: '97%',
+               marginLeft: 'auto',
+               marginRight: 'auto',     
             }}>
                 <Grid container rowSpacing={5}>
                     <Grid item xs={6}>
                         <InputBox
                             placeholder={"What specific need or problem can be addressed?"}
                             header={"2. Identify the opportunity"} 
-                            setWidth={660}
+                            setWidth={0}
                             onChange={event => null}
                             setHeight={300}
                             title={"Identify The Opportunity"}
@@ -89,7 +90,7 @@ const Desirability: React.FC<DesirabilityProps> = ({ onNext, onBack }) => {
                         <InputBox
                             placeholder={"Who are the project's potential partners and what are their needs?"}
                             header={"2a. Stakeholder Relations"} 
-                            setWidth={660}
+                            setWidth={0}
                             onChange={event => null}
                             setHeight={300}
                             title={"Stakeholder Relations"}
@@ -123,7 +124,7 @@ const Desirability: React.FC<DesirabilityProps> = ({ onNext, onBack }) => {
                         <InputBox
                             placeholder={"What can the project offer?"}
                             header={"2b. Value Proposition"} 
-                            setWidth={660}
+                            setWidth={0}
                             onChange={event => null}
                             setHeight={300}
                             title={"Value Proposition"}
@@ -157,7 +158,7 @@ const Desirability: React.FC<DesirabilityProps> = ({ onNext, onBack }) => {
                         <InputBox
                             placeholder={"What results and benefits can be created?"}
                             header={"2c. Outcomes"} 
-                            setWidth={660}
+                            setWidth={0}
                             onChange={event => null}
                             setHeight={300}
                             title={"Outcomes"}
@@ -192,7 +193,9 @@ const Desirability: React.FC<DesirabilityProps> = ({ onNext, onBack }) => {
                         />
                     </Grid>
                 </Grid>
-                <div className={styles.buttonsContainer}>
+            </Box>
+
+            <div className={styles.buttonsContainer}>
                 <button className={styles.backBtn} type="submit" onClick={onBack}>
                     Back
                 </button>
@@ -201,7 +204,6 @@ const Desirability: React.FC<DesirabilityProps> = ({ onNext, onBack }) => {
                     Next
                 </button>
             </div>
-            </Box>
 
             {/* <div className={styles.stepper}>
                 <CustomStepper currPage={currentPage} onNext={handleNext} />

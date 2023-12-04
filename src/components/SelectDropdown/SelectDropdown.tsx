@@ -11,10 +11,8 @@ import styled from '@emotion/styled';
 const BootstrapInput = styled(InputBase)((theme) => ({
   '& .MuiInputBase-input': {
     borderRadius: 4,
-    position: 'relative',
     border: '1px solid #ced4da',
     fontSize: "large",
-    padding: 'px 26px 10px 12px',
     borderStyle: "none",
   },
 }));

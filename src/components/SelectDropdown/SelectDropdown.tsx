@@ -1,9 +1,23 @@
-import React, { useState} from 'react';
+import React, { useState } from 'react';
 import styles from './SelectDropdown.module.css';
-import { IconButton } from '@mui/material';
+import { IconButton, MenuItem } from '@mui/material';
 import HelpIcon from "@mui/icons-material/Help";
-import {getNames} from 'country-list';
+import { getNames } from 'country-list';
 import ModalDialog from '../ModalDialog/ModalDialog.tsx';
+import Select from '@mui/material/Select';
+import InputBase from '@mui/material/InputBase';
+import styled from '@emotion/styled';
+
+const BootstrapInput = styled(InputBase)((theme) => ({
+  '& .MuiInputBase-input': {
+    borderRadius: 4,
+    position: 'relative',
+    border: '1px solid #ced4da',
+    fontSize: "large",
+    padding: 'px 26px 10px 12px',
+    borderStyle: "none",
+  },
+}));
 
 interface selectProps {
     header: string;
@@ -14,7 +28,7 @@ interface selectProps {
 }
 
 const SelectDropdown: React.FC<selectProps> = ({ header, title, modalChildren }): React.ReactElement => {
-    const [selectedOption, setSelectedOption] = useState("");
+    const [selectedOption, setSelectedOption] = useState("Select a Region");
     const [openModal, setOpenModal] = useState(false);
 
     const handleOpenModal = () => {
@@ -35,13 +49,23 @@ const SelectDropdown: React.FC<selectProps> = ({ header, title, modalChildren })
             <HelpIcon style={{ color: "black", padding: '0px' }} />
           </IconButton>
         </div>
-        <select className={styles.inputBox} onChange={(e) => handleOptionChange(e.target.value)}>
+        {/* <select className={styles.inputBox} onChange={(e) => handleOptionChange(e.target.value)}>
           {Object.entries(countryOptions).map(([code, name]) => (
             <option key={code} value={name as string}>
               {name as React.ReactNode}
             </option>
           ))}
-        </select>
+        </select> */}
+        <Select className={styles.inputBox} value={selectedOption} onChange={(e) => handleOptionChange(e.target.value)} input={<BootstrapInput/>}>
+          <MenuItem value="Select a Region">
+            <em>Select a region</em>
+          </MenuItem>
+          {Object.entries(countryOptions).map(([code, name]) => (
+              <MenuItem value={name as string}>
+                {name as React.ReactNode}
+              </MenuItem>
+            ))}
+        </Select>
          {/* Render the ModalDialog conditionally */}
          {openModal && title && modalChildren && (
           <ModalDialog

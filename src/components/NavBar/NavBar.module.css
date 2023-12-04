@@ -1,0 +1,12 @@
+.navBar {
+    background-color: var(--color-dark-blue);
+    height: 10%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.title {
+    color: white;
+    font-size: 25px;
+}

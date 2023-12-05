@@ -10,6 +10,7 @@ import Feasibility from "./pages/Feasibility/Feasibiltiy.tsx";
 import Viability from "./pages/Viability/Viability.tsx";
 import Proposal from "./pages/Proposal/Proposal.tsx";
 
+/* Main app */
 function App() {
   const [currentPage, setCurrentPage] = useState(1);
 

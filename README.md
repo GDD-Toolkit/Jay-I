@@ -48,7 +48,7 @@ Start the server
 - Jessica Nguyen - [@throwExceptionPlease](https://github.com/throwExceptionPlease)
 - Tobiloba Adegbaju - [@ade-olu](https://github.com/ade-olu)
 - Sophia Gonzales - [@sophiag0n](https://github.com/sophiag0n)
-- Ojie Okodogbe
+- Ojie Okodogbe - [@ojieok](https://github.com/ojieok)
 - Khadija Wane
 - Krisha Mahadevia
 ## Acknowledgements

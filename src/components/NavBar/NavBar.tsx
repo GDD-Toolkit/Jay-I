@@ -6,9 +6,15 @@ interface props {
 }
 
 const NavBar = ({ title }: props): React.ReactElement => {
+  const logo = require('../../assets/GDDLogo.png');
   return (
     <div className={styles.navBar}>
-      <h1 className={styles.title}>{title}</h1>
+      <div className={styles.logoHolder}>
+        <img src={logo} className={styles.logo}/>
+      </div>
+      <div className={styles.holder}>
+        <h1 className={styles.title}>{title}</h1>
+      </div>
     </div>
   );
 };

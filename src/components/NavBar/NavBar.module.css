@@ -4,9 +4,30 @@
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+}
+
+.holder {
+    width: 100%;
+}
+
+/* May have to change this because doesn't flex with navbar*/
+.logoHolder {
+    position: absolute;
+    width: 94.5%;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
 }
 
 .title {
     color: white;
     font-size: 25px;
+    width: 100%;
+}
+
+.logo {
+    width: 5%;
 }

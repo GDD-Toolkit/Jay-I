@@ -68,7 +68,9 @@ const SelectDropdown: React.FC<selectProps> = ({
           <em>Select a region</em>
         </MenuItem>
         {Object.entries(countryOptions).map(([code, name]) => (
-          <MenuItem value={name as string}>{name as React.ReactNode}</MenuItem>
+          <MenuItem key={code} value={name as string}>
+            {name as React.ReactNode}
+          </MenuItem>
         ))}
       </Select>
       {/* Render the ModalDialog conditionally */}

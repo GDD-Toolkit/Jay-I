@@ -1,0 +1,37 @@
+.container {
+    border: black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    text-align: left;
+    padding-left: 15px;
+    padding-bottom: 20px;
+    padding-right: 15px;
+    max-width: 95.8%;
+}
+
+.headerBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.inputBox {
+    border: none;
+    outline: none;
+    font-size: large;
+    padding: 0px;
+    width: 99.2%;
+    max-width: 99.2%;
+}
+
+textarea {
+    resize: none;
+    max-width: 99.2%;
+}

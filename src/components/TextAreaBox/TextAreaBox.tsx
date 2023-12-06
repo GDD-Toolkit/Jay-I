@@ -1,7 +1,7 @@
 import { ThemeProvider } from "@emotion/react";
 import React, { useState } from "react";
 import { theme } from "../../mui.ts";
-import styles from "./InputBox.module.css";
+import styles from "./TextAreaBox.module.css";
 import { IconButton } from "@mui/material";
 import HelpIcon from "@mui/icons-material/Help";
 import ModalDialog from "../ModalDialog/ModalDialog.tsx";
@@ -14,9 +14,10 @@ interface inputProps {
   onChange: (event) => void;
   title: string;
   modalChildren: React.ReactNode;
+  textareaheight: number;
 }
 
-const InputBox = ({
+const TextAreaBox = ({
   placeholder,
   header,
   setWidth,
@@ -24,6 +25,7 @@ const InputBox = ({
   title,
   modalChildren,
   onChange,
+  textareaheight,
 }: inputProps): React.ReactElement => {
   const [openModal, setOpenModal] = useState(false);
 
@@ -40,7 +42,8 @@ const InputBox = ({
     paddingLeft: "15px",
     paddingBottom: "20px",
     width: setWidth || "94%",
-    height: setHeight || undefined,
+    minHeight: setHeight,
+    height: "fit-content",
     marginRight: "auto",
     marginLeft: "auto",
   };
@@ -55,7 +58,11 @@ const InputBox = ({
             <HelpIcon style={{ color: "black", padding: "0px" }} />
           </IconButton>
         </div>
-        <input placeholder={placeholder} className={styles.inputBox}></input>
+        <textarea
+          placeholder={placeholder}
+          className={styles.inputBox}
+          rows={(textareaheight)}
+        ></textarea>
       </div>
       {/* Render the ModalDialog conditionally */}
       {openModal && title && modalChildren && (
@@ -70,4 +77,4 @@ const InputBox = ({
   );
 };
 
-export default InputBox;
+export default TextAreaBox;

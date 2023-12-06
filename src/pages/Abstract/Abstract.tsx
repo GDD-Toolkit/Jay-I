@@ -7,6 +7,7 @@ import NavBar from "../../components/NavBar/NavBar.tsx";
 // import CustomStepper from '../../components/Stepper/CustomStepper.tsx';
 import { theme } from "../../mui.ts";
 import styles from "./Abstract.module.css";
+import TextAreaBox from "../../components/TextAreaBox/TextAreaBox.tsx";
 
 interface AbstractProps {
   onNext: () => void;
@@ -58,7 +59,8 @@ const Abstract: React.FC<AbstractProps> = ({ onNext, onBack }) => {
             />
           </Grid>
           <Grid item xs={12}>
-            <InputBox
+            <TextAreaBox
+              textareaheight={24}
               placeholder={""}
               header={"Abstract"}
               setWidth={0}

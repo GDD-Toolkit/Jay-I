@@ -7,6 +7,7 @@ import NavBar from "../../components/NavBar/NavBar.tsx";
 // import CustomStepper from '../../components/Stepper/CustomStepper.tsx';
 import { theme } from "../../mui.ts";
 import styles from "./Ecosystem.module.css";
+import TextAreaBox from "../../components/TextAreaBox/TextAreaBox.tsx";
 
 interface EcosystemProps {
   onNext: () => void;
@@ -48,7 +49,8 @@ const Ecosystem: React.FC<EcosystemProps> = ({ onNext, onBack }) => {
       >
         <Grid container rowSpacing={5}>
           <Grid item xs={12}>
-            <InputBox
+            <TextAreaBox
+              textareaheight={24}
               placeholder={"What and who is involved?"}
               header={"Ecosystem"}
               setWidth={0}

@@ -6,6 +6,7 @@ import { theme } from "../../mui.ts";
 import { Box, Grid } from "@mui/material";
 import InputBox from "../../components/InputBox/InputBox.tsx";
 import styles from "./Desirability.module.css";
+import TextAreaBox from "../../components/TextAreaBox/TextAreaBox.tsx";
 // import CustomStepper from '../../components/Stepper/CustomStepper.tsx';
 
 interface DesirabilityProps {
@@ -23,14 +24,6 @@ const Desirability: React.FC<DesirabilityProps> = ({ onNext, onBack }) => {
   const handleBack = () => {
     setCurrentPage((prevPage) => prevPage - 1);
   };
-
-  // const handleOpenModal = () => {
-  //   setOpenModal(true);
-  // }
-
-  // const handleCloseModal = () => {
-  //   setOpenModal(false);
-  // }
 
   const handleChanges = (event: any) => {
     /* Prevent the form from being refreshed to empty */
@@ -56,7 +49,8 @@ const Desirability: React.FC<DesirabilityProps> = ({ onNext, onBack }) => {
       >
         <Grid container rowSpacing={5}>
           <Grid item xs={6}>
-            <InputBox
+            <TextAreaBox
+              textareaheight={13}
               placeholder={"What specific need or problem can be addressed?"}
               header={"2. Identify the opportunity"}
               setWidth={0}
@@ -94,7 +88,8 @@ const Desirability: React.FC<DesirabilityProps> = ({ onNext, onBack }) => {
             />
           </Grid>
           <Grid item xs={6}>
-            <InputBox
+            <TextAreaBox
+              textareaheight={13}
               placeholder={
                 "Who are the project's potential partners and what are their needs?"
               }
@@ -141,7 +136,8 @@ const Desirability: React.FC<DesirabilityProps> = ({ onNext, onBack }) => {
             />
           </Grid>
           <Grid item xs={6}>
-            <InputBox
+            <TextAreaBox
+              textareaheight={13}
               placeholder={"What can the project offer?"}
               header={"2b. Value Proposition"}
               setWidth={0}
@@ -182,7 +178,8 @@ const Desirability: React.FC<DesirabilityProps> = ({ onNext, onBack }) => {
             />
           </Grid>
           <Grid item xs={6}>
-            <InputBox
+            <TextAreaBox
+              textareaheight={13}
               placeholder={"What results and benefits can be created?"}
               header={"2c. Outcomes"}
               setWidth={0}

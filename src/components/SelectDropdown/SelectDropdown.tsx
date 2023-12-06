@@ -51,13 +51,6 @@ const SelectDropdown: React.FC<selectProps> = ({
           <HelpIcon style={{ color: "black", padding: "0px" }} />
         </IconButton>
       </div>
-      {/* <select className={styles.inputBox} onChange={(e) => handleOptionChange(e.target.value)}>
-          {Object.entries(countryOptions).map(([code, name]) => (
-            <option key={code} value={name as string}>
-              {name as React.ReactNode}
-            </option>
-          ))}
-        </select> */}
       <Select
         className={styles.inputBox}
         value={selectedOption}

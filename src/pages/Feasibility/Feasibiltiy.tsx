@@ -4,8 +4,8 @@ import InstructionsBox from "../../components/Instructions/InstructionsBox.tsx";
 import NavBar from "../../components/NavBar/NavBar.tsx";
 import { theme } from "../../mui.ts";
 import { Box, Grid } from "@mui/material";
-import InputBox from "../../components/InputBox/InputBox.tsx";
 import styles from "./Feasibility.module.css";
+import TextAreaBox from "../../components/TextAreaBox/TextAreaBox.tsx";
 // import CustomStepper from '../../components/Stepper/CustomStepper.tsx';
 
 interface FeasibilityProps {
@@ -23,14 +23,6 @@ const Feasibility: React.FC<FeasibilityProps> = ({ onNext, onBack }) => {
   const handleBack = () => {
     setCurrentPage((prevPage) => prevPage - 1);
   };
-
-  // const handleOpenModal = () => {
-  //   setOpenModal(true);
-  // }
-
-  // const handleCloseModal = () => {
-  //   setOpenModal(false);
-  // }
 
   const handleChanges = (event: any) => {
     /* Prevent the form from being refreshed to empty */
@@ -56,7 +48,8 @@ const Feasibility: React.FC<FeasibilityProps> = ({ onNext, onBack }) => {
       >
         <Grid container rowSpacing={5}>
           <Grid item xs={6}>
-            <InputBox
+            <TextAreaBox
+              textareaheight={13}
               placeholder={"What specific need or problem can be addressed?"}
               header={"3. Key Activities"}
               setWidth={0}
@@ -91,7 +84,8 @@ const Feasibility: React.FC<FeasibilityProps> = ({ onNext, onBack }) => {
             />
           </Grid>
           <Grid item xs={6}>
-            <InputBox
+            <TextAreaBox
+              textareaheight={13}
               placeholder={"Who should we work with to address these problems?"}
               header={"3a. Key Partners"}
               setWidth={0}
@@ -139,7 +133,8 @@ const Feasibility: React.FC<FeasibilityProps> = ({ onNext, onBack }) => {
         <Grid rowSpacing={5}>
           <Grid item xs={12}>
             <Grid item xs={12}>
-              <InputBox
+              <TextAreaBox
+                textareaheight={13}
                 placeholder={"How do we communicate to potential partners?"}
                 header={"3b. Channels"}
                 setWidth={0}

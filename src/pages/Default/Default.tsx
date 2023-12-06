@@ -10,6 +10,7 @@ import SelectDropdown from "../../components/SelectDropdown/SelectDropdown.tsx";
 import { theme } from "../../mui.ts";
 import styles from "./Default.module.css";
 import Ethicality from "../Ethicality/Ethicality.tsx";
+import TextAreaBox from "../../components/TextAreaBox/TextAreaBox.tsx";
 
 interface DefaultProps {
   onNext: (index: number) => void;

@@ -4,9 +4,9 @@ import InstructionsBox from "../../components/Instructions/InstructionsBox.tsx";
 import NavBar from "../../components/NavBar/NavBar.tsx";
 import { theme } from "../../mui.ts";
 import { Box, Grid } from "@mui/material";
-import InputBox from "../../components/InputBox/InputBox.tsx";
 import styles from "./Ethicality.module.css";
 import CustomStepper from "../../components/Stepper/CustomStepper.tsx";
+import TextAreaBox from "../../components/TextAreaBox/TextAreaBox.tsx";
 
 interface EthicalityProps {
   onNext: () => void;
@@ -18,28 +18,6 @@ const Ethicality: React.FC<EthicalityProps> = ({ onNext, onBack }) => {
 
   const handleNext = () => {
     setCurrentPage((prevPage) => prevPage + 1);
-  };
-
-  const handleBack = () => {
-    setCurrentPage((prevPage) => prevPage - 1);
-  };
-
-  // const handleOpenModal = () => {
-  //   setOpenModal(true);
-  // }
-
-  // const handleCloseModal = () => {
-  //   setOpenModal(false);
-  // }
-
-  const handleChanges = (event: any) => {
-    /* Prevent the form from being refreshed to empty */
-    event.preventDefault();
-
-    handleNext();
-    console.log("handleChanges function triggered");
-
-    /* add functionality for setting fields */
   };
 
   return (
@@ -56,7 +34,8 @@ const Ethicality: React.FC<EthicalityProps> = ({ onNext, onBack }) => {
       >
         <Grid container rowSpacing={5}>
           <Grid item xs={6}>
-            <InputBox
+            <TextAreaBox
+              textareaheight={13}
               placeholder={"What issue is at stake?"}
               header={"1. Frame the Problem"}
               setWidth={0}
@@ -126,7 +105,8 @@ const Ethicality: React.FC<EthicalityProps> = ({ onNext, onBack }) => {
             />
           </Grid>
           <Grid item xs={6}>
-            <InputBox
+          <TextAreaBox
+              textareaheight={13}
               placeholder={"What and who is implicated by the project?"}
               header={"1a. Ethical Deliberation"}
               setWidth={0}
@@ -161,7 +141,8 @@ const Ethicality: React.FC<EthicalityProps> = ({ onNext, onBack }) => {
             />
           </Grid>
           <Grid item xs={6}>
-            <InputBox
+          <TextAreaBox
+              textareaheight={13}
               placeholder={
                 "How will it change things? What goal will it accomplish?"
               }
@@ -218,7 +199,8 @@ const Ethicality: React.FC<EthicalityProps> = ({ onNext, onBack }) => {
             />
           </Grid>
           <Grid item xs={6}>
-            <InputBox
+          <TextAreaBox
+              textareaheight={13}
               placeholder={"What and who is implicated by the project?"}
               header={"1c. Key Impact Indicators"}
               setWidth={0}

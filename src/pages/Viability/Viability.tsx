@@ -4,8 +4,8 @@ import InstructionsBox from "../../components/Instructions/InstructionsBox.tsx";
 import NavBar from "../../components/NavBar/NavBar.tsx";
 import { theme } from "../../mui.ts";
 import { Box, Grid } from "@mui/material";
-import InputBox from "../../components/InputBox/InputBox.tsx";
 import styles from "./Viability.module.css";
+import TextAreaBox from "../../components/TextAreaBox/TextAreaBox.tsx";
 // import CustomStepper from '../../components/Stepper/CustomStepper.tsx';
 
 interface ViabilityProps {
@@ -23,14 +23,6 @@ const Viability: React.FC<ViabilityProps> = ({ onNext, onBack }) => {
   const handleBack = () => {
     setCurrentPage((prevPage) => prevPage - 1);
   };
-
-  // const handleOpenModal = () => {
-  //   setOpenModal(true);
-  // }
-
-  // const handleCloseModal = () => {
-  //   setOpenModal(false);
-  // }
 
   const handleChanges = (event: any) => {
     /* Prevent the form from being refreshed to empty */
@@ -56,7 +48,8 @@ const Viability: React.FC<ViabilityProps> = ({ onNext, onBack }) => {
       >
         <Grid container rowSpacing={5}>
           <Grid item xs={6}>
-            <InputBox
+          <TextAreaBox
+              textareaheight={13}
               placeholder={"What resources do we have and need?"}
               header={"4. Key Resources"}
               setWidth={0}
@@ -89,7 +82,8 @@ const Viability: React.FC<ViabilityProps> = ({ onNext, onBack }) => {
             />
           </Grid>
           <Grid item xs={6}>
-            <InputBox
+          <TextAreaBox
+              textareaheight={13}
               placeholder={"How do we generate income?"}
               header={"4a. Revenue Streams"}
               setWidth={0}
@@ -122,7 +116,8 @@ const Viability: React.FC<ViabilityProps> = ({ onNext, onBack }) => {
             />
           </Grid>
           <Grid item xs={6}>
-            <InputBox
+          <TextAreaBox
+              textareaheight={13}
               placeholder={"What are the costs?"}
               header={"4b.1 Cost Structure"}
               setWidth={0}
@@ -155,7 +150,8 @@ const Viability: React.FC<ViabilityProps> = ({ onNext, onBack }) => {
             />
           </Grid>
           <Grid item xs={6}>
-            <InputBox
+          <TextAreaBox
+              textareaheight={13}
               placeholder={"How do we cover them?"}
               header={"4b.2 Cost Structure"}
               setWidth={0}

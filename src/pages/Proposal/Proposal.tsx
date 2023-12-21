@@ -1,6 +1,6 @@
 import { ThemeProvider } from "@emotion/react";
 import { Box, Grid } from "@mui/material";
-import React, { useState } from "react";
+import React from "react";
 import { theme } from "../../mui.ts";
 import styles from "./Proposal.module.css";
 
@@ -14,7 +14,7 @@ const Proposal: React.FC<ProposalProps> = ({ onHome }) => {
     <ThemeProvider theme={theme}>
       {/* Using scroll to to make scrolling back to top faster. Using anchor link would cause a lot of delay */}
       <button
-        className={styles.btnBottom}
+        className={styles.jumpTopBtn}
         onClick={() => window.scrollTo({ top: 0, behavior: "auto" })}
       >
         Jump To Top
@@ -36,9 +36,9 @@ const Proposal: React.FC<ProposalProps> = ({ onHome }) => {
             <p className={styles.date}>November 1, 2023</p>
           </Grid>
           <Grid item xs={4}>
-            <div className={styles.btns}>
+            <div className={styles.pageNavBtns}>
               <button
-                className={styles.btn}
+                className={styles.pageNavBtn}
                 onClick={() =>
                   alert(
                     "This feature is not available at this time. Please manually print this proposal."
@@ -47,7 +47,7 @@ const Proposal: React.FC<ProposalProps> = ({ onHome }) => {
               >
                 Download As PDF
               </button>
-              <button className={styles.btn} onClick={onHome}>
+              <button className={styles.pageNavBtn} onClick={onHome}>
                 Edit From The Beginning
               </button>
             </div>
@@ -396,8 +396,6 @@ const Proposal: React.FC<ProposalProps> = ({ onHome }) => {
             allocate resources effectively and ensure the viability of the
             Digital Agriculture Platform for Afghan Farmers.
           </p>
-
-          <Grid item xs={12}></Grid>
         </Grid>
       </Box>
     </ThemeProvider>

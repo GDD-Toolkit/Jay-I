@@ -38,8 +38,7 @@ const Abstract: React.FC<AbstractProps> = ({ onNext, onBack }) => {
   return (
     <ThemeProvider theme={theme}>
       <NavBar title="Abstract" />
-      <InstructionsBox></InstructionsBox>
-
+      <InstructionsBox />
       <Box
         sx={{
           width: "100%",
@@ -85,8 +84,8 @@ const Abstract: React.FC<AbstractProps> = ({ onNext, onBack }) => {
       </Box>
 
       {/* <div className={styles.stepper}>
-                <CustomStepper currPage={currentPage} onNext={handleNext} />
-            </div> */}
+            <CustomStepper currPage={currentPage} onNext={handleNext} />
+          </div> */}
     </ThemeProvider>
   );
 };

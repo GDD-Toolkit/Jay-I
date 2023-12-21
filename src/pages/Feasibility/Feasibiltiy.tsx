@@ -37,7 +37,7 @@ const Feasibility: React.FC<FeasibilityProps> = ({ onNext, onBack }) => {
   return (
     <ThemeProvider theme={theme}>
       <NavBar title="Feasibility" />
-      <InstructionsBox></InstructionsBox>
+      <InstructionsBox />
 
       <Box
         sx={{

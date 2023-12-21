@@ -38,8 +38,7 @@ const Desirability: React.FC<DesirabilityProps> = ({ onNext, onBack }) => {
   return (
     <ThemeProvider theme={theme}>
       <NavBar title="Desirability" />
-      <InstructionsBox></InstructionsBox>
-
+      <InstructionsBox />
       <Box
         sx={{
           width: "97%",

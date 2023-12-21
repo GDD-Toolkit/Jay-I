@@ -38,8 +38,7 @@ const Ecosystem: React.FC<EcosystemProps> = ({ onNext, onBack }) => {
   return (
     <ThemeProvider theme={theme}>
       <NavBar title="Ecosystem" />
-      <InstructionsBox></InstructionsBox>
-
+      <InstructionsBox />
       <Box
         sx={{
           width: "100%",
@@ -73,8 +72,8 @@ const Ecosystem: React.FC<EcosystemProps> = ({ onNext, onBack }) => {
       </Box>
 
       {/* <div className={styles.stepper}>
-                <CustomStepper currPage={currentPage} onNext={handleNext} />
-            </div> */}
+          <CustomStepper currPage={currentPage} onNext={handleNext} />
+          </div> */}
     </ThemeProvider>
   );
 };

@@ -12,10 +12,13 @@ interface ProposalProps {
 const Proposal: React.FC<ProposalProps> = ({ onHome }) => {
   return (
     <ThemeProvider theme={theme}>
-       {/* Using scroll to to make scrolling back to top faster. Using anchor link would cause a lot of delay */}
-       <button className={styles.btnBottom} onClick={() => window.scrollTo({ top: 0, behavior: 'auto' })}>
-              Jump To Top
-        </button>
+      {/* Using scroll to to make scrolling back to top faster. Using anchor link would cause a lot of delay */}
+      <button
+        className={styles.btnBottom}
+        onClick={() => window.scrollTo({ top: 0, behavior: "auto" })}
+      >
+        Jump To Top
+      </button>
       <Box
         sx={{
           width: "94%",
@@ -54,34 +57,33 @@ const Proposal: React.FC<ProposalProps> = ({ onHome }) => {
             <Grid container rowSpacing={5} columnSpacing={5}>
               <Grid item xs={12}>
                 <div className={styles.navContainer}>
-                <button className={styles.navBtn} type="submit">
-                  <a href="#abstract">1. Abstract</a>
-                </button>
-             
-                <button className={styles.navBtn} type="submit">
-                  <a href="#ethicality">2. Ethicality</a>
-                </button>
-              
-                <button className={styles.navBtn} type="submit">
-                  <a href="#desirability">3. Desirability</a>
-                </button>
+                  <button className={styles.navBtn} type="submit">
+                    <a href="#abstract">1. Abstract</a>
+                  </button>
+
+                  <button className={styles.navBtn} type="submit">
+                    <a href="#ethicality">2. Ethicality</a>
+                  </button>
+
+                  <button className={styles.navBtn} type="submit">
+                    <a href="#desirability">3. Desirability</a>
+                  </button>
                 </div>
               </Grid>
               <Grid item xs={12}>
                 <div className={styles.navContainer}>
-                <button className={styles.navBtn} type="submit">
-                  <a href="#ecosystem">4. Eco-system</a>
-                </button>
-            
-                <button className={styles.navBtn} type="submit">
-                  <a href="#feasibility">5. Feasibility</a>
-                </button>
-              
-                <button className={styles.navBtn} type="submit">
-                  <a href="#viability">6. Viability</a>
-                </button>
-              
-              </div>
+                  <button className={styles.navBtn} type="submit">
+                    <a href="#ecosystem">4. Eco-system</a>
+                  </button>
+
+                  <button className={styles.navBtn} type="submit">
+                    <a href="#feasibility">5. Feasibility</a>
+                  </button>
+
+                  <button className={styles.navBtn} type="submit">
+                    <a href="#viability">6. Viability</a>
+                  </button>
+                </div>
               </Grid>
             </Grid>
           </Grid>
@@ -395,9 +397,7 @@ const Proposal: React.FC<ProposalProps> = ({ onHome }) => {
             Digital Agriculture Platform for Afghan Farmers.
           </p>
 
-          <Grid item xs={12}>
-           
-          </Grid>
+          <Grid item xs={12}></Grid>
         </Grid>
       </Box>
     </ThemeProvider>

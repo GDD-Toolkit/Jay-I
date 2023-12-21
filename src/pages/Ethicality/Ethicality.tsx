@@ -23,8 +23,7 @@ const Ethicality: React.FC<EthicalityProps> = ({ onNext, onBack }) => {
   return (
     <ThemeProvider theme={theme}>
       <NavBar title="Ethicality" />
-      <InstructionsBox></InstructionsBox>
-
+      <InstructionsBox />
       <Box
         sx={{
           width: "97%",

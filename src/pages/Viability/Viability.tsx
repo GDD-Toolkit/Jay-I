@@ -37,7 +37,7 @@ const Viability: React.FC<ViabilityProps> = ({ onNext, onBack }) => {
   return (
     <ThemeProvider theme={theme}>
       <NavBar title="Viability" />
-      <InstructionsBox></InstructionsBox>
+      <InstructionsBox />
 
       <Box
         sx={{

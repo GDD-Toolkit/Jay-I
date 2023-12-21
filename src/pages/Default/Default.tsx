@@ -43,7 +43,7 @@ const Default: React.FC<DefaultProps> = ({ onNext }) => {
   return (
     <ThemeProvider theme={theme}>
       <NavBar title="General Information" />
-      <InstructionsBox></InstructionsBox>
+      <InstructionsBox />
       <Box
         sx={{
           width: "97%",

@@ -122,62 +122,58 @@ const Feasibility: React.FC<FeasibilityProps> = ({ onNext, onBack }) => {
           </Grid>
         </Grid>
       </Box>
+
       <Box
         sx={{
           width: "100%",
           marginLeft: "auto",
           marginRight: "auto",
-          marginTop: "25px",
+          marginTop: "40px",
         }}
       >
-        <Grid rowSpacing={5}>
-          <Grid item xs={12}>
-            <Grid item xs={12}>
-              <TextAreaBox
-                textareaheight={13}
-                placeholder={"How do we communicate to potential partners?"}
-                header={"3b. Channels"}
-                setWidth={0}
-                onChange={(event) => null}
-                setHeight={300}
-                title={"Channels"}
-                modalChildren={
-                  <ol type="a">
-                    <li>
-                      <b>Identify and Group Potential Partners: </b>Segment
-                      potential partners based on their nature and role into
-                      primary and secondary partners to meet the specific needs
-                      and ethical goals of the project.
-                    </li>
-                    <li>
-                      <b>Customized Communication Strategies: </b>Tailor
-                      communication strategies for each partner group and
-                      facilitate communication using various channels like
-                      face-to-face or virtual meetings, formal agreements, and
-                      digital media.
-                    </li>
-                    <li>
-                      <b>Continuous Engagement and Feedback: </b>Regularly
-                      engage in dialogue using these communication channels to
-                      address questions, concerns, and suggestions related to
-                      the project's ethical objectives.
-                    </li>
-                  </ol>
-                }
-              />
-            </Grid>
-          </Grid>
+        <Grid item xs={12}>
+          <TextAreaBox
+            textareaheight={13}
+            placeholder={"How do we communicate to potential partners?"}
+            header={"3b. Channels"}
+            setWidth={0}
+            onChange={(event) => null}
+            setHeight={300}
+            title={"Channels"}
+            modalChildren={
+              <ol type="a">
+                <li>
+                  <b>Identify and Group Potential Partners: </b>Segment
+                  potential partners based on their nature and role into primary
+                  and secondary partners to meet the specific needs and ethical
+                  goals of the project.
+                </li>
+                <li>
+                  <b>Customized Communication Strategies: </b>Tailor
+                  communication strategies for each partner group and facilitate
+                  communication using various channels like face-to-face or
+                  virtual meetings, formal agreements, and digital media.
+                </li>
+                <li>
+                  <b>Continuous Engagement and Feedback: </b>Regularly engage in
+                  dialogue using these communication channels to address
+                  questions, concerns, and suggestions related to the project's
+                  ethical objectives.
+                </li>
+              </ol>
+            }
+          />
         </Grid>
-        <div className={styles.buttonsContainer}>
-          <button className={styles.backBtn} type="submit" onClick={onBack}>
-            Back
-          </button>
-
-          <button className={styles.nextBtn} type="submit" onClick={onNext}>
-            Next
-          </button>
-        </div>
       </Box>
+      <div className={styles.buttonsContainer}>
+        <button className={styles.backBtn} type="submit" onClick={onBack}>
+          Back
+        </button>
+
+        <button className={styles.nextBtn} type="submit" onClick={onNext}>
+          Next
+        </button>
+      </div>
 
       {/* <div className={styles.stepper}>
                 <CustomStepper currPage={currentPage} onNext={handleNext} />

@@ -51,9 +51,9 @@ function App() {
       {currentPage === 7 && (
         <Viability onNext={handleNext} onBack={handleBack} />
       )}
-      {currentPage == 8 && <Proposal onHome={handleHome} onBack={handleBack} />}
-
-      {/* Will have to import proposal page later */}
+      {currentPage == 8 &&
+        <Proposal onHome={handleHome} onBack={handleBack} />
+      }
     </ThemeProvider>
   );
 }

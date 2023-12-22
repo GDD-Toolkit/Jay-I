@@ -46,6 +46,7 @@ const TextAreaBox = ({
     height: "fit-content",
     marginRight: "auto",
     marginLeft: "auto",
+    backgroundColor: "white",
   };
 
   return (
@@ -61,7 +62,7 @@ const TextAreaBox = ({
         <textarea
           placeholder={placeholder}
           className={styles.inputBox}
-          rows={(textareaheight)}
+          rows={textareaheight}
         ></textarea>
       </div>
       {/* Render the ModalDialog conditionally */}

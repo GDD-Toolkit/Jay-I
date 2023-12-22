@@ -1,3 +1,7 @@
+.page {
+  background-color: var(--color-white);
+}
+
 .pageTitle {
   font-size: 50px;
   text-shadow: 2px 5px 6px rgba(0,0,0,0.30);
@@ -7,20 +11,20 @@
 
 .authorName {
   font-size: 25px;
-  color: grey;
+  color: #505767;
   font-weight: bolder;
   margin: 0px;
 }
 
 .affiliation {
   font-size: 25px;
-  color: grey;
+  color: #505767;
   margin: 0px;
 }
 
 .date {
   font-size: 25px;
-  color: grey;
+  color: #505767;
   margin: 0px;
 }
 

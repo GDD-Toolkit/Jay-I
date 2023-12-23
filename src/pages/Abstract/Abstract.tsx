@@ -37,55 +37,59 @@ const Abstract: React.FC<AbstractProps> = ({ onNext, onBack }) => {
 
   return (
     <ThemeProvider theme={theme}>
-      <NavBar title="Abstract" />
-      <InstructionsBox />
-      <Box
-        sx={{
-          width: "100%",
-          marginLeft: "auto",
-        }}
-      >
-        <Grid container rowSpacing={5}>
-          <Grid item xs={12}>
-            <InputBox
-              placeholder={""}
-              header={"Project Title"}
-              setWidth={0}
-              onChange={(event) => null}
-              setHeight={0}
-              title={"Project Title"}
-              modalChildren={"Please enter the title of your project proposal."}
-            />
+      <div className={styles.whole}>
+        <NavBar title="Abstract" />
+        <InstructionsBox />
+        <Box
+          sx={{
+            width: "100%",
+            marginLeft: "auto",
+          }}
+        >
+          <Grid container rowSpacing={5}>
+            <Grid item xs={12}>
+              <InputBox
+                placeholder={""}
+                header={"Project Title"}
+                setWidth={0}
+                onChange={(event) => null}
+                setHeight={0}
+                title={"Project Title"}
+                modalChildren={
+                  "Please enter the title of your project proposal."
+                }
+              />
+            </Grid>
+            <Grid item xs={12}>
+              <TextAreaBox
+                textareaheight={24}
+                placeholder={""}
+                header={"Abstract"}
+                setWidth={0}
+                onChange={(event) => null}
+                setHeight={500}
+                title={"Abstract"}
+                modalChildren={
+                  "Please copy and paste OR type in your project abstract."
+                }
+              />
+            </Grid>
           </Grid>
-          <Grid item xs={12}>
-            <TextAreaBox
-              textareaheight={24}
-              placeholder={""}
-              header={"Abstract"}
-              setWidth={0}
-              onChange={(event) => null}
-              setHeight={500}
-              title={"Abstract"}
-              modalChildren={
-                "Please copy and paste OR type in your project abstract."
-              }
-            />
-          </Grid>
-        </Grid>
-        <div className={styles.buttonsContainer}>
-          <button className={styles.backBtn} type="submit" onClick={onBack}>
-            Back
-          </button>
+          <div className={styles.buttonsContainer}>
+            <button className={styles.backBtn} type="submit" onClick={onBack}>
+              Back
+            </button>
 
-          <button className={styles.nextBtn} type="submit" onClick={onNext}>
-            Next
-          </button>
-        </div>
-      </Box>
+            <button className={styles.nextBtn} type="submit" onClick={onNext}>
+              Next
+            </button>
+          </div>
+        </Box>
 
-      {/* <div className={styles.stepper}>
+        {/* <div className={styles.stepper}>
             <CustomStepper currPage={currentPage} onNext={handleNext} />
           </div> */}
+      </div>
     </ThemeProvider>
   );
 };

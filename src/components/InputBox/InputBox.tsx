@@ -43,6 +43,7 @@ const InputBox = ({
     height: setHeight || undefined,
     marginRight: "auto",
     marginLeft: "auto",
+    backgroundColor: "white",
   };
 
   return (

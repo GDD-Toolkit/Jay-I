@@ -37,43 +37,45 @@ const Ecosystem: React.FC<EcosystemProps> = ({ onNext, onBack }) => {
 
   return (
     <ThemeProvider theme={theme}>
-      <NavBar title="Ecosystem" />
-      <InstructionsBox />
-      <Box
-        sx={{
-          width: "100%",
-          marginLeft: "auto",
-          marginRight: "auto",
-        }}
-      >
-        <Grid container rowSpacing={5}>
-          <Grid item xs={12}>
-            <TextAreaBox
-              textareaheight={24}
-              placeholder={"What and who is involved?"}
-              header={"Ecosystem"}
-              setWidth={0}
-              onChange={(event) => null}
-              setHeight={500}
-              title={"Ecosystem"}
-              modalChildren={<p>What and who is involved?</p>}
-            />
+      <div className={styles.page}>
+        <NavBar title="Ecosystem" />
+        <InstructionsBox />
+        <Box
+          sx={{
+            width: "100%",
+            marginLeft: "auto",
+            marginRight: "auto",
+          }}
+        >
+          <Grid container rowSpacing={5}>
+            <Grid item xs={12}>
+              <TextAreaBox
+                textareaheight={24}
+                placeholder={"What and who is involved?"}
+                header={"Ecosystem"}
+                setWidth={0}
+                onChange={(event) => null}
+                setHeight={500}
+                title={"Ecosystem"}
+                modalChildren={<p>What and who is involved?</p>}
+              />
+            </Grid>
           </Grid>
-        </Grid>
-        <div className={styles.buttonsContainer}>
-          <button className={styles.backBtn} type="submit" onClick={onBack}>
-            Back
-          </button>
+          <div className={styles.buttonsContainer}>
+            <button className={styles.backBtn} type="submit" onClick={onBack}>
+              Back
+            </button>
 
-          <button className={styles.nextBtn} type="submit" onClick={onNext}>
-            Next
-          </button>
-        </div>
-      </Box>
+            <button className={styles.nextBtn} type="submit" onClick={onNext}>
+              Next
+            </button>
+          </div>
+        </Box>
 
-      {/* <div className={styles.stepper}>
+        {/* <div className={styles.stepper}>
           <CustomStepper currPage={currentPage} onNext={handleNext} />
           </div> */}
+      </div>
     </ThemeProvider>
   );
 };
